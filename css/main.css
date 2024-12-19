@@ -9,6 +9,7 @@ body {
     font-family: "Poppins", serif;
     font-weight: 400;
     color:#fff;
+    font-size: 16px;
 }
 
 a {
@@ -20,7 +21,7 @@ img {
 }
 
 .wrapper {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 35%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 100%);
     width: 100%;
 }
 
@@ -100,3 +101,9 @@ header nav ul li.btn a:hover {
     font-size: 20px;
     font-weight: 600;
 }
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
