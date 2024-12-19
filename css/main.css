@@ -61,3 +61,15 @@ header nav ul li a {
 header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #DC7000;
 }
+
+header nav ul li.btn a {
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #844501;
+}
+
