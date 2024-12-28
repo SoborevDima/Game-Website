@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/html/about.html">About us</a></li>
+                    <li><a href="./about.html">About us</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">News</a></li>
                     <li class="btn"><a href="#">Contact us</a></li>
@@ -34,7 +34,7 @@
                 </p>
                 <button class="btn">Get more details</button>
             </div>
-            <img src="../img/joystick.svg" alt="Джостик">
+            <img class="gamepad" src="../img/joystick.svg" alt="Джостик">
         </div>
 
         <div class="container trending">
@@ -44,19 +44,19 @@
             <div class="games">
                 <div class="block">
                     <img src="/img/Game1.png" alt="For Honor">
-                    <span><img src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
+                    <span><img class="top-games" src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
                 </div>
                 <div class="block">
                     <img src="/img/Game2.png" alt="хз че">
-                    <span><img src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
+                    <span><img class="top-games" src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
                 </div>
                 <div class="block">
                     <img src="/img/Game3.png" alt="Крайзис3">
-                    <span><img src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
+                    <span><img class="top-games" src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
                 </div>
                 <div class="block">
                     <img src="/img/Game4.png" alt="Про кота">
-                    <span><img src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
+                    <span><img class="top-games" src="/img/fire 1.svg" alt="Огонек">40 Followers</span>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 and typesetting industry. Lorem Ipsum has been 
                 the industry's standard dummy text ever since the 1500s,
             </p>
-            <img src="/img/banner.png" alt="баннер человек паук">
+            <img class="banner-img" src="/img/banner.png" alt="баннер человек паук">
         </div>
     </div>
 
@@ -87,34 +87,34 @@
             </p>
             <div class="info">
                 <div class="block">
-                    <img src="/img/feature1.png" alt="">
+                    <img class="features-img"src="/img/feature1.png" alt="">
                     <p>Mobile Game Development</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
                 <div class="block">
-                    <img src="/img/feature2.png" alt="">
+                    <img class="features-img"src="/img/feature2.png" alt="">
                     <p>PC Game Development</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
                 <div class="block">
-                    <img src="/img/feature3.png" alt="">
+                    <img class="features-img"src="/img/feature3.png" alt="">
                     <p>PS4 Game Development</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
                 <div class="block">
-                    <img src="/img/feature4.png" alt="">
+                    <img class="features-img"src="/img/feature4.png" alt="">
                     <p>AR/VR Solutions</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
                 <div class="block">
-                    <img src="/img/feature5.png" alt="">
+                    <img class="features-img"src="/img/feature5.png" alt="">
                     <p>AR/ VR design</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
                 <div class="block">
-                    <img src="/img/feature6.png" alt="">
+                    <img class="features-img"src="/img/feature6.png" alt="">
                     <p>3D Modelings</p>
-                    <img src="/img/arrow 1.png" alt="стрелка">
+                    <img class="features-img"src="/img/arrow 1.png" alt="стрелка">
                 </div>
             </div>
         </div>
@@ -190,10 +190,12 @@
 
     <script>
         function checkEmail() {
-            let email = document.querySelector('#emailField').value;
-            if(!email.includes('@')) alert ('Нет символа @');
-            else if(!email.includes('.')) alert ('Нет символа .');
-            else alert('Все отлично!');
+            const email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) {
+                alert ('Нет символа @');
+            } else if(!email.includes('.')){
+                alert ('Нет символа .');
+            } else alert('Все отлично!');
         }
     </script>
 </body>
