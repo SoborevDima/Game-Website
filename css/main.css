@@ -464,6 +464,7 @@ footer > p {
 .banner2 {
     padding: 110px;
     background: #1C140F;
+    height: 550px;
 }
 
 .banner2 .info {
@@ -499,4 +500,40 @@ footer > p {
     width: 500px;
     padding: 50px 35px;
     margin-right: 130px;
+}
+
+.team {
+    height: 350px;
+    width: 1250px;
+    margin-top: 70px;
+    padding: 110px 65px;
+}
+
+.team .blocks2 .block {
+    background: #1C140F;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    width: 275px;
+    height: 220px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.team .blocks2 .block h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 826px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team .blocks2 .block p {
+margin-bottom: 20px;
+    text-align: center;
+    max-width: 826px ;
+    margin-left: auto;
+    margin-right: auto;
 }
