@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color:#fff;
     font-size: 16px;
+    background: #000;
 }
 
 a {
@@ -505,35 +506,62 @@ footer > p {
 .team {
     height: 350px;
     width: 1250px;
-    margin-top: 70px;
-    padding: 110px 65px;
+    margin: 0 auto;
+    padding: 70px 0;
 }
 
-.team .blocks2 .block {
+.teams-card >.card {
     background: #1C140F;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 20px 25px;
-    width: 275px;
-    height: 220px;
+    width: 300px;
+    height: 250px;
     margin-top: 50px;
     border-radius: 15px;
+    justify-content: center;
 }
 
-.team .blocks2 .block h3 {
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    max-width: 826px ;
-    margin-left: auto;
-    margin-right: auto;
+.card >.card-img {
+    width: 123px;
+    height: 123px;
+    margin: 0 auto;
 }
 
-.team .blocks2 .block p {
-margin-bottom: 20px;
+.card > h1 {
     text-align: center;
-    max-width: 826px ;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.card > p {
+    text-align: center;
+}
+
+
+.teams-card {
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+
+/* Страница контактов */
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 133px;
+}
+
+.social {
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+}
+
+.social-icons > img {
+
 }
