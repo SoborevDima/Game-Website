@@ -302,6 +302,7 @@ font-size: 31px;
     margin-top: 60px;
     font-size: 30px;
     font-weight: 600;
+    margin-top: 150px;
 }
 
 .email .block {
@@ -553,8 +554,14 @@ footer > p {
     padding: 70px 133px;
 }
 
-.social {
+.hero-contacts {
+    text-align: center;
+    margin-bottom: 93px;
+    margin-top: 93px;
+}
 
+.hero-contacts .map {
+    margin-top: 93px;
 }
 
 .social-icons {
@@ -579,9 +586,153 @@ footer > p {
 .number {
     border-right: 1px solid white;
     border-left: 1px solid white;
-    padding: 0 54px;
+    padding: 0 330px;
+    font-size: 20px;
 }
 
 .gps {
     display: flex;
 }
+
+.feedback {
+    padding: 70px 0;
+    background:#1C140F;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background: #2C2420;
+    border-radius: 9px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 260px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: #fff;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover {
+    background: #844501;
+}
+
+/* Страница портфолио */
+
+.portfolio h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+.portfolio p {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.portfolio .info  {
+    background: #1C140F;
+    margin: 170px;
+    height:200px;
+    width: 1140px;
+    margin: auto;
+}
+
+.portfolio .info-portfolio {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+}
+
+.portfolio .portfolio-img {
+
+}
+
+.info .info-portfolio .border {
+    border-right: 0.5px solid white;
+    border-left: 0.5px solid white;
+}
+
+.banner-video {
+    margin: 150px;
+    display: flex;
+    width: 1400px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.banner-video .info {
+    margin-left: 100px;
+    width: 430px;
+}
+
+.banner-video .play {
+    position: relative;
+    max-width: 55px;
+    max-height: 55px;
+    left: -360px;
+    bottom: -150px;
+}
+
+.banner-video .info h1 {
+    margin-bottom: 15px;
+}
+
+.banner-video .info p {
+    margin-bottom: 28px;
+}
+
+.banner-video .info .colored li::marker {
+    content: url(/img/colored.png);
+}
+
