@@ -780,5 +780,43 @@ footer > p {
     padding-right: 100px;
 }
 
+.game-portfolio2 {
+    width: 1400px;
+    margin: auto;
+    margin-top: 180px;
+}
 
+.game-portfolio2 .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
 
+.game-portfolio2 .info h1 {
+    margin-bottom: 43px;
+}
+
+.game-portfolio2 .info p {
+    margin-bottom: 30px;
+}
+
+.game-portfolio2 .info button {
+    background: #FA9021;
+    padding: 20px 70px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    border: 0;
+    margin-top: 43px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.game-portfolio2 .info button:hover {
+    background: #844501;
+}
+
+.game-portfolio2 .game-img {
+    width: 500px;
+    padding-right: 100px;
+    margin-right: 100px;
+}
