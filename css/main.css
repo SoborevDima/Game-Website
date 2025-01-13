@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./variable.css"
 
 * {
     margin:0;
@@ -10,7 +11,7 @@ body {
     font-weight: 400;
     color:#fff;
     font-size: 16px;
-    background: #000;
+    background: var(--main-color);
 }
 
 a {
@@ -306,7 +307,7 @@ font-size: 31px;
 }
 
 .email .block {
-    background: #1C140F;
+    background: var(--second-color);
     margin-top: 30px;
     border-radius: 10px;
     padding: 40px 3%;
@@ -397,12 +398,13 @@ font-size: 31px;
     width: 25%;
     border-radius: 10px;
     padding: 50px 35px;
-    background: #1C140F;
+    background: var(--second-color);
 }
 .work .blocks .block h3 {
     font-size: 20px;
     margin: 20px 0;
 }
+
 
 .work .blocks .block .badge {
     border-radius: 7px;
@@ -424,7 +426,7 @@ font-size: 31px;
 /* Footer */
 
 footer {
-    background: #000;
+    background: ;
     padding: 50px 0;
 }
 
@@ -465,7 +467,7 @@ footer > p {
 
 .banner2 {
     padding: 110px;
-    background: #1C140F;
+    background: var(--second-color);
     height: 550px;
 }
 
@@ -476,6 +478,8 @@ footer > p {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    width: 1400px;
+    margin: auto;
 }
 
 .banner2 h2 {
@@ -512,7 +516,7 @@ footer > p {
 }
 
 .teams-card >.card {
-    background: #1C140F;
+    background: var(--second-color);
     display: flex;
     flex-direction: column;
     padding: 20px 25px;
@@ -569,12 +573,8 @@ footer > p {
     justify-content: start;
 }
 
-.social-icons > img {
-
-}
-
 .circle {
-    background: #1C140F;
+    background: var(--second-color);
     border-radius: 100%;
     height: 34px;
     width: 34px;
@@ -596,7 +596,7 @@ footer > p {
 
 .feedback {
     padding: 70px 0;
-    background:#1C140F;
+    background:var(--second-color);
 }
 
 .feedback h2 {
@@ -669,7 +669,7 @@ footer > p {
 
 /* Страница портфолио */
 
-.portfolio h1 {
+.portfolio h1  {
     text-align: center;
     margin-top: 80px;
     margin-bottom: 15px;
@@ -679,9 +679,8 @@ footer > p {
     text-align: center;
     margin-bottom: 45px;
 }
-
 .portfolio .info  {
-    background: #1C140F;
+    background: var(--second-color);
     margin: 170px;
     height:200px;
     width: 1140px;
@@ -692,10 +691,6 @@ footer > p {
     display: flex;
     justify-content: space-between;
     padding: 75px;
-}
-
-.portfolio .portfolio-img {
-
 }
 
 .info .info-portfolio .border {
@@ -732,12 +727,30 @@ footer > p {
     margin-bottom: 28px;
 }
 
+.banner-spider {
+    width: 670px;
+    height: 355px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
 .banner-video .info .colored {
     padding: 20px;
 }
 
-.banner-video .info .colored li::marker {
+.colored-item {
+    position: relative;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.colored-item::before {
     content: url(/img/colored.png);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+
 }
 
 .game-portfolio {
@@ -768,6 +781,7 @@ footer > p {
     margin-top: 43px;
     font-size: 17px;
     color: #fff;
+    cursor: pointer;
 }
 
 .game-portfolio .info button:hover {
@@ -810,6 +824,7 @@ footer > p {
     margin-top: 43px;
     font-size: 17px;
     color: #fff;
+    cursor: pointer;
 }
 
 .game-portfolio2 .info button:hover {
@@ -831,6 +846,7 @@ footer > p {
 .game-portfolio3 .info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .game-portfolio3 .info h1 {
@@ -845,11 +861,12 @@ footer > p {
     background: #FA9021;
     padding: 20px 70px;
     border-radius: 5px;
-    transition: all 500ms ease;
     border: 0;
     margin-top: 43px;
     font-size: 17px;
     color: #fff;
+    transition: all 500ms ease;
+    cursor: pointer;
 }
 
 .game-portfolio3 .info button:hover {
@@ -861,4 +878,56 @@ footer > p {
     margin-left: 160px;
     padding-right: 100px;
     border-radius: 70px;
+}
+
+/* Отзывы */
+
+.reviews {
+    background: var(--second-color);
+    padding: 70px 0;
+}
+
+.reviews .container{
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 55px;
+}
+
+.service-img-wrapper {
+    background-color: #FFECEC;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.portfolio-img {
+    width: 24px;
+    height: 24px;
+}
+
+.service {
+    display: flex;
+    gap: 15px;
+}
+
+.service-info {
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.service:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 130px;
 }
