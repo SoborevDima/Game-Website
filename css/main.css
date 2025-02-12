@@ -1004,33 +1004,83 @@ footer > p {
     outline: none;
 }
 
-.news-game {
-    margin-top: 103px;
+.game-info {
     width: 587px;
 }
 
-.news-game .game-img {
-    width: 587px;
-    height: 295px;
-    object-fit: fill;
-    margin-bottom: 23px;
-}
-
-.news-game .color-name {
-    background: #2351F5;
+.game-info .style {
+    background-color: #2351F5;
     padding: 10px;
-    margin-right: 10px;
-    text-align: start;
+    margin-right: 5px;
 }
 
-.line {
-    display: block;
-    width:587px;
-    color: #A5A5A5;
-    border: none;
-    border-top: 0.7px solid #A5A5A5;
+.game-info .style-img {
+    margin-bottom: 20px;
+}
+
+.style-hr {
+    background-color: #A5A5A5;
+    border-top: 0.7px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 587px;
+}
+
+.game-news {
+    display: flex;
+    padding: 110px;
+}
+
+.game-news p {
+    line-height: 35px;
+}
+
+.world-container {
+    margin-left: 72px;
+}
+
+.world-container .distance {
+    margin-bottom: -40px;
+}
+
+.world-info .info {
     position: relative;
-    left: -415px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    right: -230px;
+    top: -135px;
+}
+
+.world-info .info .style {
+    background-color: #2351F5;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.distance .style2 {
+    background-color: #DC7000;
+    padding: 10px;
+}
+
+.distance .style3 {
+    background-color: #B00000;
+    padding: 10px;
+}
+
+.distance .style4 {
+    background-color: #027B50;
+    padding: 10px;
+}
+
+.distance .style5 {
+    background-color: #2351F5;
+    padding: 10px;
+}
+
+.distance .style6 {
+    background-color: #ffff00b1;
+    padding: 10px;
+}
+
+.distance .style7 {
+    background-color: #ee82eeb6;
+    padding: 10px;
 }
